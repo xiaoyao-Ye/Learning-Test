@@ -1,57 +1,57 @@
-// // import { it, expect, describe } from 'vitest'
-// export function describe(_name: string, _fn: () => void): void;
+// import { it, expect, describe } from 'vitest'
+export function describe(_name: string, _fn: () => void): void {}
 
-// import { expectError, expectType } from "tsd";
+import { expectError, expectType } from "tsd";
 
-// describe("基础类型", () => {
-//   describe("boolean", () => {
-//     const boo = true;
-//     expectType<boolean>(boo);
-//   });
+describe("基础类型", () => {
+  describe("boolean", () => {
+    const boo = true;
+    expectType<boolean>(boo);
+  });
 
-//   describe("number", () => {
-//     const num = 1;
-//     expectType<number>(num);
-//   });
+  describe("number", () => {
+    const num = 1;
+    expectType<number>(num);
+  });
 
-//   describe("string", () => {
-//     const str = "123";
-//     expectType<string>(str);
-//   });
+  describe("string", () => {
+    const str = "123";
+    expectType<string>(str);
+  });
 
-//   describe("void", () => {
-//     describe("函数没有返回值的时候，将返回一个 void 类型", () => {
-//       const getVal = () => {};
-//       expectType<void>(getVal());
-//     });
+  describe("void", () => {
+    describe("函数没有返回值的时候，将返回一个 void 类型", () => {
+      const getVal = () => {};
+      expectType<void>(getVal());
+    });
 
-//     describe("void 能赋值给 undefined 和 null", () => {
-//       expectType<void>(undefined);
-//       expectType<void>(null);
-//     });
-//   });
+    describe("void 能赋值给 undefined 和 null", () => {
+      expectType<void>(undefined);
+      expectType<void>(null);
+    });
+  });
 
-//   describe("null", () => {
-//     const nullVal: null = null;
-//     expectType<null>(nullVal);
-//     expectError<undefined>(undefinedVal);
-//   });
+  describe("null", () => {
+    const nullVal: null = null;
+    expectType<null>(nullVal);
+    expectError<undefined>(undefinedVal);
+  });
 
-//   describe("undefined", () => {
-//     const undefinedVal: undefined = undefined;
-//     expectType<undefined>(undefinedVal);
-//     expectError<null>(undefinedVal);
-//   });
+  describe("undefined", () => {
+    const undefinedVal: undefined = undefined;
+    expectType<undefined>(undefinedVal);
+    expectError<null>(undefinedVal);
+  });
 
-//   describe("undefined 和 null 是所有类型的子类型", () => {
-//     expectType<number>(undefined);
-//     expectType<string>(undefined);
-//     expectType<boolean>(undefined);
-//     expectType<void>(undefined);
+  describe("undefined 和 null 是所有类型的子类型", () => {
+    expectType<number>(undefined);
+    expectType<string>(undefined);
+    expectType<boolean>(undefined);
+    expectType<void>(undefined);
 
-//     expectType<number>(null);
-//     expectType<string>(null);
-//     expectType<boolean>(null);
-//     expectType<void>(null);
-//   });
-// });
+    expectType<number>(null);
+    expectType<string>(null);
+    expectType<boolean>(null);
+    expectType<void>(null);
+  });
+});

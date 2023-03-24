@@ -65,5 +65,8 @@
       /* Advanced Options */
       "skipLibCheck": true,                     /* Skip type checking of declaration files. */
       "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
-    }
+    },
+    // "paths": {
+    //   "@type-challenges/utils": ["node_modules/@type-challenges/utils"]
+    // }
   }
