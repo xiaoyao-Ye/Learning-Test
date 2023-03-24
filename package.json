@@ -1,0 +1,28 @@
+{
+  "name": "test-type",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "vitest": "vitest",
+    "test": "tsd"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@type-challenges/utils": "^0.1.1",
+    "vitest": "^0.29.7",
+    "tsd": "^0.13.1"
+  },
+  "tsd": {
+    "directory": "test-dts",
+    "compilerOptions": {
+      "strict": false,
+      "lib": [
+        "esnext",
+        "dom"
+      ]
+    }
+  }
+}
