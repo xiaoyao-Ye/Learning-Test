@@ -1,11 +1,11 @@
 {
-  "name": "test-type",
+  "name": "test-ts",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "vitest",
-    "test:once": "vitest run"
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "keywords": [],
   "author": "",
