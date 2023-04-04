@@ -1,5 +1,4 @@
 import {
-  run,
   test,
   it,
   expect,
@@ -59,5 +58,3 @@ describe("desc: describe", () => {
     console.log("describe test");
   });
 });
-
-run();
