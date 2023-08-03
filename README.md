@@ -13,3 +13,7 @@ A record repository for learning typescript and testing
 ## todo-vitest
 
 Learn testing by simply implementing a todo
+
+## test-stub
+
+Indirect Input to Test Program
