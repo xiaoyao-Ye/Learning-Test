@@ -1,0 +1,22 @@
+{
+  "name": "*",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.6",
+    "happy-dom": "^9.20.3",
+    "typescript": "^5.1.6",
+    "vitest": "^0.34.1"
+  },
+  "dependencies": {
+    "vitest-environment-ghosteye": "link:vitest-environment-ghosteye"
+  }
+}
